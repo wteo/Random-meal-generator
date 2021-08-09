@@ -7,13 +7,12 @@ public class dessert {
 
     public static void getDessert() {
         
-        String[] desserts = {"Ice-cream", "Fruits", "Cake", "Fruits", "Fruits", "Fruits"};
+        String[] desserts = {"Ice-cream", "Fruits", "Cake"};
         String[] fruits = {"Oranges", "Kiwis", "Strawberries", "Grapes", "Apples"};
         Random dessert = new Random();
         int indexDesserts = dessert.nextInt(desserts.length), indexFruits = dessert.nextInt(fruits.length);
         Scanner user = new Scanner(System.in);
         String randomChoice = desserts[indexDesserts];
-        Random otherDessert = new Random();
         
         while (true) {
         
