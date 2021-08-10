@@ -20,12 +20,12 @@ public class MainMeal {
             System.out.println("Please pick a cuisine. (Asian/Western)");
             String regionSelection = user.nextLine();
             
-            if (regionSelection.equals("Asian")) {
+            if (regionSelection.equalsIgnoreCase("Asian")) {
                 
                 System.out.println("Always a favourite! Why don't you make some " + Meat[indexMeat] + " " + Asian[indexAsian] + " today?");
                 break;
             
-                } else if (regionSelection.equals("Western")) {
+                } else if (regionSelection.equalsIgnoreCase("Western")) {
                 
                 System.out.println("That's a classic. Feel like having a " + Meat[indexMeat] + " " + Western[indexWestern] + " today?");
                 break;
