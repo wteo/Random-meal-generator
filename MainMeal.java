@@ -55,12 +55,12 @@ public class MainMeal {
             System.out.println("Do you need a recipe for this? (Yes/No)");
             String choice = user.nextLine();
         
-            if (choice.equals("Yes") || choice.equals("Y") || choice.equals("y") || choice.equals("yes")) {
+            if (choice.equalsIgnoreCase("Yes") || choice.equalsIgnoreCase("Y")) {
                 
                 System.out.println("Click here www.google.com");
                 break;
                
-                } else if (choice.equals("No") || choice.equals("N") || choice.equals("n") || choice.equals("no")) {
+                } else if (choice.equalsIgnoreCase("No") || choice.equalsIgnoreCase("N")) {
                 
                 System.out.println(compliments[indexCompliments]);
                 break;
