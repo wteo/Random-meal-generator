@@ -19,7 +19,7 @@ public class dessert {
             System.out.println("Fancy a dessert? (Yes/No)");
             String choice = user.nextLine();
             
-            if (choice.equals("Yes") || choice.equals("Y") || choice.equals("y") || choice.equals("yes")) {
+            if (choice.equalsIgnoreCase("Yes") || choice.equalsIgnoreCase("Y")) {
 
                 System.out.println("You should have some " + randomChoice + ".");
             
@@ -34,7 +34,7 @@ public class dessert {
                     
                     }
             
-                } else if (choice.equals("No") || choice.equals("N") || choice.equals("n") || choice.equals("no")) {
+                } else if (choice.equalsIgnoreCase("No") || choice.equalsIgnoreCase("N")) {
                     
                     System.out.println("Gotcha.");
                     break;
